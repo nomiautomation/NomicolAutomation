@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Registrar empresa" skipped="0" tests="1" time="7.42" timestamp="2022-04-22 06:48:54"><testcase name="Como usuario de Nomicol quiero registrar una nueva empresa"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registrar empresa" skipped="0" tests="1" time="4.09" timestamp="2022-04-27 11:27:27"><testcase name="Como usuario de Nomicol quiero registrar una nueva empresa"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+Tests.NomicolTest.clicEnRegistrate(NomicolTest.java:15)&#13;
+Definitions.NomicolDefinitions.elUsuarioHaceClicEnRegistrate(NomicolDefinitions.java:20)&#13;
+✽.el usuario  hace clic en Registrate(src/test/resources/features/NomicolAutomation.feature:6)&#13;
+</system-err></testcase></testsuite>

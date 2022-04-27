@@ -6,7 +6,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class NomicolDefinitions {
-
     NomicolTest nomicolTest = new NomicolTest();
 
     @Given("^el usuario ingresa a la pagina de Nomicol$")
@@ -17,12 +16,13 @@ public class NomicolDefinitions {
 
     @When("^el usuario  hace clic en Registrate$")
     public void elUsuarioHaceClicEnRegistrate() {
-
+        nomicolTest.clicEnRegistrate();
     }
+
 
     @When("^el usuario diligencia el formulario de Empieza Ahora$")
     public void elUsuarioDiligenciaElFormularioDeEmpiezaAhora() {
-
+     nomicolTest.dilegenciarFormularioEmpiezaAhora("");
     }
 
     @When("^el usuario hace clic en el boton  Continuar$")

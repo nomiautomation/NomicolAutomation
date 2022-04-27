@@ -131,7 +131,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-04-2022 18:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-04-2022 11:27</span>
     <br style="clear:left"/>
 </div>
 
@@ -172,9 +172,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Como usuario de Nomicol quiero registrar una nueva empresa
+                                <span class="error-color">Como usuario de Nomicol quiero registrar una nueva empresa
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -191,17 +191,49 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Null pointer exception</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.NullPointerException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>Tests.NomicolTest.clicEnRegistrate(NomicolTest.java:15)<br />Definitions.NomicolDefinitions.elUsuarioHaceClicEnRegistrate(NomicolDefinitions.java:20)<br />✽.el usuario  hace clic en Registrate(src/test/resources/features/NomicolAutomation.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource2182234997793805155.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given el usuario ingresa a la pagina de Nomicol" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" When el usuario  hace clic en Registrate" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" And el usuario diligencia el formulario de Empieza Ahora" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" And el usuario hace clic en el boton  Continuar" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" And el usuario diligencia el segundo formulario de registro" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" And el usuario hace clic en el boton  Crear Cuenta" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" When el usuario confirma su correo electronico" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" And el Usuario termina el proceso de registro de su empresa" width="1366"/>
-                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Then el usuario puede ingresar a su empresa: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" When el usuario  hace clic en Registrate: <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 

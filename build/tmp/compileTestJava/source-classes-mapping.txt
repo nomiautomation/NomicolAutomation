@@ -1,0 +1,8 @@
+Localizadores/NomicolLocalizadores.java
+ Localizadores.NomicolLocalizadores
+Definitions/NomicolDefinitions.java
+ Definitions.NomicolDefinitions
+Runner/Runner.java
+ Runner.Runner
+Tests/NomicolTest.java
+ Tests.NomicolTest
