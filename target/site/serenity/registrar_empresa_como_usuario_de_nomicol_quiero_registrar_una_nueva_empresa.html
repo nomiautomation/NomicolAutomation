@@ -101,7 +101,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-04-2022 11:27</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-05-2022 17:35</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -141,9 +141,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="success-color">
                                     Como usuario de Nomicol quiero registrar una nueva empresa
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -160,9 +160,52 @@
 
     <div class="clr"></div>
 
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given el usuario ingresa a la pagina de Nomicol<br>When el usuario  hace clic en Registrate<br>And el usuario diligencia el formulario de Empieza Ahora  &lt;nombrePersonal&gt;, &lt;nombreCompania&gt;, &lt;numeroEmpleados&gt;, &lt;actividadEconomica&gt;<br>And el usuario hace clic en el boton  Continuar<br>And el usuario diligencia el segundo formulario de registro<br>And el usuario hace clic en el boton  Crear Cuenta<br>When el usuario confirma su correo electronico<br>And el Usuario termina el proceso de registro de su empresa<br>Then el usuario puede ingresar a su empresa</div>
+
+        </div>
 
     <div id="beforetable"></div>
 
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>Nombrepersonal</th>
+                            <th>Nombrecompania</th>
+                            <th>Numeroempleados</th>
+                            <th>Actividadeconomica</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Laura Duenas</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">RedValley</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">1-5</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Agricultura/Ganaderia</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
     <div id="tablecontents">
         <div>
@@ -184,12 +227,56 @@
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
                                 <span class="top-level-step">
+                                Example #1: {nombrePersonal=Laura Duenas, nombreCompania=RedValley, numeroEmpleados=1-5, actividadEconomica=Agricultura/Ganaderia}
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=0">
+                                    <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
+                                         href="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=10">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">11.28s</span></td>
+                </tr>
+                <tr>
+                <td colspan="5">
+                <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
                                 Given el usuario ingresa a la pagina de Nomicol
                             </span>
                             <span class="evidence">
@@ -198,33 +285,6 @@
                     </td>
                         <td width="160" class="SUCCESS-text">
 
-                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=0">
-                                    <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
-                                         href="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.92s</span></td>
-                </tr>
-                <tr class="test-ERROR">
-                    <td width="50" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="top-level-step">
-                                When el usuario  hace clic en Registrate
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="ERROR-text">
-
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=1">
                                     <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
                                          href="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
@@ -232,198 +292,233 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.04s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.83s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">java.lang.NullPointerException</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-2""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-2">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.NullPointerException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>Tests.NomicolTest.clicEnRegistrate(NomicolTest.java:15)<br />Definitions.NomicolDefinitions.elUsuarioHaceClicEnRegistrate(NomicolDefinitions.java:20)<br />✽.el usuario  hace clic en Registrate(src/test/resources/features/NomicolAutomation.feature:6)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                        </td>
-                    </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="2"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
-                                And el usuario diligencia el formulario de Empieza Ahora
+                                <span class="nested-group-step">
+                                When el usuario  hace clic en Registrate
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=2">
+                                    <img src="498b61c7c3e395e25c8c44fdf17f881fd88f38801bd6806f2823f104e28ceb59.png"
+                                         href="498b61c7c3e395e25c8c44fdf17f881fd88f38801bd6806f2823f104e28ceb59.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.26s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="3"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
+                                And el usuario diligencia el formulario de Empieza Ahora  Laura Duenas, RedValley, 1-5, Agricultura/Ganaderia
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=3">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.16s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
                                 And el usuario hace clic en el boton  Continuar
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=4">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="4"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
                                 And el usuario diligencia el segundo formulario de registro
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=5">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="5"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
                                 And el usuario hace clic en el boton  Crear Cuenta
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=6">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="6"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
                                 When el usuario confirma su correo electronico
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=7">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="7"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
                                 And el Usuario termina el proceso de registro de su empresa
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=8">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
-                        <a name="8"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                                <span class="top-level-step">
+                                <span class="nested-group-step">
                                 Then el usuario puede ingresar a su empresa
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SKIPPED-text">
+                        <td width="160" class="SUCCESS-text">
 
+                                <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=9">
+                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+
+                </table>
+                </td>
+                <tr>
+                <tr class="test-SUCCESS">
                         <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>4.09s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>14.29s</em></span></td>
                 </tr>
 
             </table>

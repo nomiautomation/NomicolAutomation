@@ -5,8 +5,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.awt.*;
+
 public class NomicolDefinitions {
-    NomicolTest nomicolTest = new NomicolTest();
+
+    NomicolTest nomicolTest;
 
     @Given("^el usuario ingresa a la pagina de Nomicol$")
     public void elUsuarioIngresaALaPaginaDeNomicol() {
@@ -20,9 +23,9 @@ public class NomicolDefinitions {
     }
 
 
-    @When("^el usuario diligencia el formulario de Empieza Ahora$")
-    public void elUsuarioDiligenciaElFormularioDeEmpiezaAhora() {
-     nomicolTest.dilegenciarFormularioEmpiezaAhora("");
+    @When("^el usuario diligencia el formulario de Empieza Ahora (.*), (.*), (.*), (.*)$")
+    public void elUsuarioDiligenciaElFormularioDeEmpiezaAhora(String nombrePersonal, String nombreCompañia, String numeroEmpleados, String actividadEconomica) throws AWTException {
+        nomicolTest.dilegenciarFormularioEmpiezaAhora(nombrePersonal, nombreCompañia, numeroEmpleados, actividadEconomica);
     }
 
     @When("^el usuario hace clic en el boton  Continuar$")

@@ -9,18 +9,21 @@ public  class NomicolLocalizadores extends PageObject {
     public NomicolLocalizadores() {
     }
 
-    @FindBy(xpath = "//a[text()='REGÍSTRATE']")
-    public  WebElementFacade botonRegistrate;//Modificador de acceso
+    @FindBy(xpath="//a[text()='REGÍSTRATE']")
+    public WebElementFacade botonRegistrate;
 
-    @FindBy(xpath = "//input[@name='firstName']")
-    public  WebElementFacade nombrePersonal;
+    @FindBy(xpath="//input[@name='firstName']")
+    public WebElementFacade nombrePersonal;
 
-    @FindBy(xpath = "//input[@name='name']")
-    public  WebElementFacade nombredelaCompañía;
+    @FindBy(xpath="//input[@name='name']")
+    public WebElementFacade nombredelaCompañía;
 
-    @FindBy(xpath = "//input[@id='react-select-2-input']")
-    public  WebElementFacade numeroEmpleados;
+    @FindBy(xpath="(//div[@class=' css-tlfecz-indicatorContainer'])[1]")
+    public WebElementFacade abrirListaNumeroEmpleados;
 
-    @FindBy(xpath = "//input[@id='react-select-3-input']")
-    public  WebElementFacade actividadEconomica;
+    @FindBy(xpath="(//div[@class=' css-tlfecz-indicatorContainer'])[1]")
+    public WebElementFacade abrirListaActividadEconomica;
+
+    @FindBy(xpath="//button[text()='Continuar']")
+    public WebElementFacade botonContinuar;
 }
