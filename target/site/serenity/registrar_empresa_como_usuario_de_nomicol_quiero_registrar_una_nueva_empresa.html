@@ -101,7 +101,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-05-2022 17:35</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-06-2022 08:07</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -163,7 +163,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Given el usuario ingresa a la pagina de Nomicol<br>When el usuario  hace clic en Registrate<br>And el usuario diligencia el formulario de Empieza Ahora  &lt;nombrePersonal&gt;, &lt;nombreCompania&gt;, &lt;numeroEmpleados&gt;, &lt;actividadEconomica&gt;<br>And el usuario hace clic en el boton  Continuar<br>And el usuario diligencia el segundo formulario de registro<br>And el usuario hace clic en el boton  Crear Cuenta<br>When el usuario confirma su correo electronico<br>And el Usuario termina el proceso de registro de su empresa<br>Then el usuario puede ingresar a su empresa</div>
+            <div class="scenario">Given el usuario ingresa a la pagina de Nomicol<br>When el usuario  hace clic en Registrate<br>And el usuario diligencia el formulario de Empieza Ahora  &lt;nombrePersonal&gt;, &lt;nombreCompania&gt;, &lt;numeroEmpleados&gt;, &lt;actividadEconomica&gt;<br>And el usuario hace clic en el boton  Continuar<br>And el usuario diligencia el segundo formulario de registro &lt;telefonoTrabajo&gt;, &lt;correoTrabajo&gt;, &lt;contraseña&gt;<br>And el usuario hace clic en el boton  Crear Cuenta<br>When el usuario confirma su correo electronico &lt;correoTrabajo&gt;<br>And el Usuario termina el proceso de registro de su empresa<br>Then el usuario puede ingresar a su empresa</div>
 
         </div>
 
@@ -185,6 +185,9 @@
                             <th>Nombrecompania</th>
                             <th>Numeroempleados</th>
                             <th>Actividadeconomica</th>
+                            <th>Telefonotrabajo</th>
+                            <th>Correotrabajo</th>
+                            <th>Contraseña</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -197,10 +200,19 @@
                                             href="#0">RedValley</a>
                                 </td>
                                 <td class="test-SUCCESS"><a
-                                            href="#0">1-5</a>
+                                            href="#0">6-20</a>
                                 </td>
                                 <td class="test-SUCCESS"><a
-                                            href="#0">Agricultura/Ganaderia</a>
+                                            href="#0">Agricultura / Ganader&iacute;a</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">3008974562</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">@yopmail.com</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Test123!</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -238,7 +250,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                Example #1: {nombrePersonal=Laura Duenas, nombreCompania=RedValley, numeroEmpleados=1-5, actividadEconomica=Agricultura/Ganaderia}
+                                Example #1: {nombrePersonal=Laura Duenas, nombreCompania=RedValley, numeroEmpleados=6-20, actividadEconomica=Agricultura / Ganadería, telefonoTrabajo=3008974562, correoTrabajo=@yopmail.com, contraseña=Test123!}
                             </span>
                             </a>
                             <span class="evidence">
@@ -247,22 +259,22 @@
                     </td>
                         <td width="160" class="SUCCESS-text">
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=0">
-                                    <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
-                                         href="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
+                                    <img src="f7a46e2e61ee65575075df81c2873dbb2cad0c9c0317986a0420b00efad12cec.png"
+                                         href="f7a46e2e61ee65575075df81c2873dbb2cad0c9c0317986a0420b00efad12cec.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=10">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
+                                         href="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">11.28s</span></td>
+                    <td width="100"><span class="top-level-step">33.73s</span></td>
                 </tr>
                 <tr>
                 <td colspan="5">
@@ -286,14 +298,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=1">
-                                    <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
-                                         href="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png"
+                                    <img src="f7a46e2e61ee65575075df81c2873dbb2cad0c9c0317986a0420b00efad12cec.png"
+                                         href="f7a46e2e61ee65575075df81c2873dbb2cad0c9c0317986a0420b00efad12cec.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.83s</span></td>
+                    <td width="100"><span class="nested-group-step">9.38s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -313,14 +325,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=2">
-                                    <img src="498b61c7c3e395e25c8c44fdf17f881fd88f38801bd6806f2823f104e28ceb59.png"
-                                         href="498b61c7c3e395e25c8c44fdf17f881fd88f38801bd6806f2823f104e28ceb59.png"
+                                    <img src="d928e3e438dc4e1055584634e0d91e7d65112e3a1684b8ce8d3495b7b90cd7d0.png"
+                                         href="d928e3e438dc4e1055584634e0d91e7d65112e3a1684b8ce8d3495b7b90cd7d0.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.26s</span></td>
+                    <td width="100"><span class="nested-group-step">0.85s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -331,7 +343,7 @@
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                And el usuario diligencia el formulario de Empieza Ahora  Laura Duenas, RedValley, 1-5, Agricultura/Ganaderia
+                                And el usuario diligencia el formulario de Empieza Ahora  Laura Duenas, RedValley, 6-20, Agricultura / Ganadería
                             </span>
                             <span class="evidence">
                             </span>
@@ -340,14 +352,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=3">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="30b81737decdb87e287a40fedfa574e41d836e0cc1f20eb13f96a0f9d680fed2.png"
+                                         href="30b81737decdb87e287a40fedfa574e41d836e0cc1f20eb13f96a0f9d680fed2.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">6.16s</span></td>
+                    <td width="100"><span class="nested-group-step">2.77s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -367,14 +379,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=4">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="a06d16f9cbfc4282d9ddb654f5f37a99f5716c0f320285dceb2f60026e461047.png"
+                                         href="a06d16f9cbfc4282d9ddb654f5f37a99f5716c0f320285dceb2f60026e461047.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.72s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -385,7 +397,7 @@
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                And el usuario diligencia el segundo formulario de registro
+                                And el usuario diligencia el segundo formulario de registro 3008974562, @yopmail.com, Test123!
                             </span>
                             <span class="evidence">
                             </span>
@@ -394,14 +406,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=5">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="35b199e4d5fca5e1cc00a1496ccc65d9a5cafc20b800db25b980d80774dff1cc.png"
+                                         href="35b199e4d5fca5e1cc00a1496ccc65d9a5cafc20b800db25b980d80774dff1cc.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">2.55s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -421,14 +433,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=6">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="2e864749f1056a9b47a26977e22a600abf96e0422cc9e5ebd8a1c9a95da92b30.png"
+                                         href="2e864749f1056a9b47a26977e22a600abf96e0422cc9e5ebd8a1c9a95da92b30.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.67s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -439,7 +451,7 @@
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                When el usuario confirma su correo electronico
+                                When el usuario confirma su correo electronico @yopmail.com
                             </span>
                             <span class="evidence">
                             </span>
@@ -448,14 +460,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=7">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
+                                         href="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">16.77s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -475,8 +487,8 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=8">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
+                                         href="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
@@ -502,14 +514,14 @@
                         <td width="160" class="SUCCESS-text">
 
                                 <a href="registrar_empresa_como_usuario_de_nomicol_quiero_registrar_una_nueva_empresa_screenshots.html#screenshots?screenshot=9">
-                                    <img src="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
-                                         href="83bd0173af02a46967ec98a8fb800707373f3f7ea19403412254269d98d309a9.png"
+                                    <img src="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
+                                         href="d7778582a738cfc7dddd6da3af8c5d2c658d2c206ec74855538f638245e3f6f0.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
                 </tr>
 
                 </table>
@@ -518,7 +530,7 @@
                 <tr class="test-SUCCESS">
                         <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>14.29s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>41.99s</em></span></td>
                 </tr>
 
             </table>

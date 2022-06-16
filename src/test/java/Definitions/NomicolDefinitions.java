@@ -22,7 +22,6 @@ public class NomicolDefinitions {
         nomicolTest.clicEnRegistrate();
     }
 
-
     @When("^el usuario diligencia el formulario de Empieza Ahora (.*), (.*), (.*), (.*)$")
     public void elUsuarioDiligenciaElFormularioDeEmpiezaAhora(String nombrePersonal, String nombreCompañia, String numeroEmpleados, String actividadEconomica) throws AWTException {
         nomicolTest.dilegenciarFormularioEmpiezaAhora(nombrePersonal, nombreCompañia, numeroEmpleados, actividadEconomica);
@@ -30,22 +29,22 @@ public class NomicolDefinitions {
 
     @When("^el usuario hace clic en el boton  Continuar$")
     public void elUsuarioHaceClicEnElBotonContinuar() {
-
+        nomicolTest.clickEnBotonContinuar();
     }
 
-    @When("^el usuario diligencia el segundo formulario de registro$")
-    public void elUsuarioDiligenciaElSegundoFormularioDeRegistro() {
-
+    @When("^el usuario diligencia el segundo formulario de registro (.*), (.*), (.*)$")
+    public void elUsuarioDiligenciaElSegundoFormularioDeRegistro(String telefonoTrabajo, String correoTrabajo, String contraseña) {
+        nomicolTest.diligenciarSegundoFormularioDeRegistro(telefonoTrabajo, correoTrabajo, contraseña);
     }
 
     @When("^el usuario hace clic en el boton  Crear Cuenta$")
     public void elUsuarioHaceClicEnElBotonCrearCuenta() {
-
+        nomicolTest.clickEnbotonCrearCuenta();
     }
 
-    @When("^el usuario confirma su correo electronico$")
-    public void elUsuarioConfirmaSuCorreoElectronico() {
-
+    @When("^el usuario confirma su correo electronico (.*)$")
+    public void elUsuarioConfirmaSuCorreoElectronico(String correo) {
+        nomicolTest.abrirYopmailParaConfirmarCorreo(correo);
     }
 
     @When("^el Usuario termina el proceso de registro de su empresa$")

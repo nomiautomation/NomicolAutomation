@@ -6,11 +6,11 @@ Feature: Registrar empresa
     When el usuario  hace clic en Registrate
     And el usuario diligencia el formulario de Empieza Ahora  <nombrePersonal>, <nombreCompania>, <numeroEmpleados>, <actividadEconomica>
     And el usuario hace clic en el boton  Continuar
-    And el usuario diligencia el segundo formulario de registro
+    And el usuario diligencia el segundo formulario de registro <telefonoTrabajo>, <correoTrabajo>, <contraseña>
     And el usuario hace clic en el boton  Crear Cuenta
-    When el usuario confirma su correo electronico
+    When el usuario confirma su correo electronico <correoTrabajo>
     And el Usuario termina el proceso de registro de su empresa
     Then el usuario puede ingresar a su empresa
     Examples:
-      | nombrePersonal | nombreCompania | numeroEmpleados | actividadEconomica    |
-      | Laura Duenas   | RedValley      | 1-5             | Agricultura/Ganaderia |
+      | nombrePersonal | nombreCompania | numeroEmpleados | actividadEconomica      | telefonoTrabajo | correoTrabajo | contraseña |
+      | Laura Duenas   | RedValley      | 6-20            | Agricultura / Ganadería | 3008974562      | @yopmail.com  | Test123!   |
